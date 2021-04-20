@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Web con estilo Neon | Página de muestra</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta hhtp-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="contenido-encabezado" id="contenido-encabezado">
+        <div class="texto-encabezado">
+            <p class="icono">
+                <i class="fas fa-glass-cheers"></i>
+            </p>
+            <h1 class="titulo">
+                Bohemiam Bar <br>¡Entra!<br> 
+                <span class="titulo-naranja-neon texto-regular">50% de Descuento</span>
+            </h1>
+            <p class="descripcion">
+                Tenemos nueva sucursal <br>
+                Por apertura, todas nuestras bebidas a mitad <br>
+                de precio en Av Lorem 28-B, Col. centro, Ipsum.
+            </p>
+
+            <a href="#" class="btn-link texto-regular">Más información</a>
+        </div>
+    </header>   
+
+    <main>
+        <section class="contenedor">
+            <h2 class="subtitulo-h2">Servicios</h2>
+            <p><span class="letra-capital">P</span>ara despejar la cabeza orem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Exercitationem commodi enim quasi, iusto earum blanditiis autem corrupti dolorum in officia quae quam aut eius voluptatum sit quo ratione dolor inventore fuga perspiciatis voluptates. 
+            Veritatis vero sint esse rem magni in reprehenderit ab cum libero, deleniti recusandae repellat labore impedit similique!</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Odit autem eius, nobis repudiandae voluptatem eveniet doloribus numquam consequuntur vero a obcaecati deserunt quidem ratione quae ut! 
+            Suscipit tempora minima voluptatibus commodi consequuntur optio. 
+            Assumenda dolorem accusantium maxime doloremque veritatis fugit adipisci illo incidunt illum minima quam, ut, sequi nemo, quas tenetur harum laborum qui sunt facere possimus? Asperiores, cum reiciendis.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Voluptates similique doloremque eum quisquam eius libero quasi sit voluptas ullam consectetur dolor, voluptate dolores. 
+            Itaque esse ipsam enim. Ut, eveniet quidem?</p> 
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/f241e46f9b.js" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('contenido-encabezado');
+            header.style.opacity = '1' - window.pageYOffset / 650; // Calculo cuantos pixeles scroleo para abajo y lo divido por 650(precalculado) y obtenemos el efecto de oscurecer
+        });
+    </script>
+</body>
+</html>
